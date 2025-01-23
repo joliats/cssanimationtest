@@ -1,0 +1,29 @@
+body {
+    height: 300vh; /* Enough scrollable height */
+    margin: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    background-color: #082239;
+}
+
+.space {
+    height: 3000px; /* Space before the image appears */
+}
+
+.container {
+    height: 3200px; /* Container height for the pinned effect */
+    position: relative;
+}
+
+.scaleDown {
+    width: 250vw; /* Slightly larger than the viewport */
+    height: 250vh; /* Slightly larger than the viewport */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the image */
+    background-image: url("porscheeee.jpg"); /* Replace with your actual image path */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; /* Ensure the full image is visible */
+    transform-origin: center; /* Center the zoom effect */
+}
